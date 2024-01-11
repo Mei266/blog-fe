@@ -1,0 +1,96 @@
+// .header-btn {
+//     padding         : 16px 20px;
+//     font-size       : 16px;
+//     font-weight     : 500;
+//     border          : none;
+//     background-color: #001219;
+//     color           : white;
+//     cursor          : pointer;
+
+//     &:hover {
+//         background-color: white;
+//         color           : #001219;
+//     }
+// }
+.btn-contact{
+    background-color: #BF211A;
+}
+
+.header-btn {
+    color  : white !important;
+    cursor : pointer;
+    padding: 3px 15px !important;
+}
+
+.header-btn:hover {
+    color: #FFBD59 !important;
+}
+
+.header-btn-active {
+    // background-color: white !important;
+    color           : #FFBD59 !important;
+    font-weight     : 700;
+}
+
+.home-header {
+    display: flex !important;
+}
+
+.home-header--show {
+    display: flex !important;
+}
+
+.home-header--hidden {
+    display: flex !important;
+}
+
+.home-search {
+    padding-top: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    .home-header--show {
+        display   : flex;
+        position  : fixed;
+        transition: transform 0.8s ease-out;
+        transform : translateY(0);
+    }
+
+    .home-header--hidden {
+        transition: transform 0.8s ease-out;
+        transform : translateY(-100%);
+    }
+}
+
+.dropdown-menu{
+    margin-top: 18px;
+}
+
+.dropdown-toggle{
+    color  : white !important;
+    cursor : pointer;
+    padding: 3px 15px !important;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.dropdown-toggle:hover, .dropdown-item:hover {
+    color: #FFBD59 !important;
+}
+
+.dropdown-item{
+    color: #0966FF;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.active{
+    color: #FFBD59 !important;
+}
+
+.header-fixed {
+    position: fixed;
+    top: 0;
+    // width: 100%;
+    z-index: 1000; /* Đặt z-index để phần tử cố định nằm trên cùng */
+}
